@@ -13,7 +13,7 @@ Ping test using Apple's Simple Ping.
 ## Third Party Libraries
 + SimplePing (Obj-C Apple)
 + LDSRouterInfo (Obj-C)
-+ - [TinyConsole Framework](https://github.com/Cosmo/TinyConsole) (To display debug area info on screen)
+- [TinyConsole Framework](https://github.com/Cosmo/TinyConsole) (To display debug area info on screen)
 
 
 
