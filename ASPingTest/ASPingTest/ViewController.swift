@@ -58,15 +58,17 @@ class ViewController: UIViewController, SimplePingDelegate {
     func simplePing(_ pinger: SimplePing, didFailToSendPacket packet: Data, sequenceNumber: UInt16, error: Error) {
         let err = error as NSError
         if err.code == 65 {
-            consolePrint("PING: didFailToSendPacket \(packet)")
+            consolePrint("PING: didFailToSendPacket \(err.description)",error: error)
         }
     }
 }
 
 extension ViewController {
     
-    func consolePrint(_ content: String) {
+    func consolePrint(_ content: String, error: Error? = nil) {
         TinyConsole.print(content)
-        TinyConsole.addLine()
+        if let _ = error {
+            TinyConsole.addLine()
+        }
     }
 }
