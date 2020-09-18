@@ -8,7 +8,7 @@ Ping test using Apple's Simple Ping.
 + Xcode 11.7
 
 ## Use
-+ Shake your device to toggle the console view. If you’re using the Simulator, press <kbd>⌃ ctrl</kbd>-<kbd>⌘ cmd</kbd>-<kbd>z</kbd>. or Device > Shake
++ Shake your device to toggle the console view. If you’re using the Simulator, press <kbd>⌃ ctrl</kbd>-<kbd>⌘ cmd</kbd>-<kbd>z</kbd> or Device > Shake
 
 ## Third Party Libraries
 + SimplePing (Obj-C Apple)
