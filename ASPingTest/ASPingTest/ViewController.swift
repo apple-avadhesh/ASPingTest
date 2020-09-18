@@ -13,7 +13,7 @@ class ViewController: UIViewController, SimplePingDelegate {
     //MARK:
     var pinger: SimplePing? = nil
     var timer: DispatchSourceTimer? = nil
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,9 +23,12 @@ class ViewController: UIViewController, SimplePingDelegate {
     
     fileprivate func getRouterInfo() {
         let router = LDSRouterInfo.getRouterInfo()
-        pinger = SimplePing(hostName: router["ip"] as! String)
-        pinger?.delegate = self
-        pinger?.start()
+        
+        if let routerIP = router["ip"] as? String {
+            pinger = SimplePing(hostName: routerIP)
+            pinger?.delegate = self
+            pinger?.start()
+        }
     }
     
     
