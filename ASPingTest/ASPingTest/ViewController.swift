@@ -53,8 +53,7 @@ class ViewController: UIViewController, SimplePingDelegate {
     func simplePing(_ pinger: SimplePing, didFailToSendPacket packet: Data, sequenceNumber: UInt16, error: Error) {
         let err = error as NSError
         if err.code == 65 {
-            print("PING: transmit failed!!!")
+            print("PING: transmission failed!!!")
         }
     }
 }
-
