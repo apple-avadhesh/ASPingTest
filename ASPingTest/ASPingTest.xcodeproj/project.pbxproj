@@ -14,6 +14,8 @@
 		9670B11D25148F9C0071C759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9670B11C25148F9C0071C759 /* Assets.xcassets */; };
 		9670B12025148F9C0071C759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9670B11E25148F9C0071C759 /* LaunchScreen.storyboard */; };
 		9670B12E2514901D0071C759 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670B12C2514901C0071C759 /* SimplePing.m */; };
+		9670B134251492F30071C759 /* LDSRouterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670B133251492F30071C759 /* LDSRouterInfo.m */; };
+		9670B136251493D40071C759 /* route.h in Sources */ = {isa = PBXBuildFile; fileRef = 9670B135251493D40071C759 /* route.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,9 @@
 		9670B12B2514901C0071C759 /* ASPingTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ASPingTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		9670B12C2514901C0071C759 /* SimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimplePing.m; sourceTree = "<group>"; };
 		9670B12D2514901D0071C759 /* SimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimplePing.h; sourceTree = "<group>"; };
+		9670B132251492F30071C759 /* LDSRouterInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDSRouterInfo.h; sourceTree = "<group>"; };
+		9670B133251492F30071C759 /* LDSRouterInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDSRouterInfo.m; sourceTree = "<group>"; };
+		9670B135251493D40071C759 /* route.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 		9670B11225148F9A0071C759 /* ASPingTest */ = {
 			isa = PBXGroup;
 			children = (
+				9670B131251492C50071C759 /* RouterInfo */,
 				9670B130251490330071C759 /* SimplePing */,
 				9670B11325148F9A0071C759 /* AppDelegate.swift */,
 				9670B11525148F9A0071C759 /* SceneDelegate.swift */,
@@ -80,6 +86,16 @@
 				9670B12C2514901C0071C759 /* SimplePing.m */,
 			);
 			path = SimplePing;
+			sourceTree = "<group>";
+		};
+		9670B131251492C50071C759 /* RouterInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9670B132251492F30071C759 /* LDSRouterInfo.h */,
+				9670B133251492F30071C759 /* LDSRouterInfo.m */,
+				9670B135251493D40071C759 /* route.h */,
+			);
+			path = RouterInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +170,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9670B136251493D40071C759 /* route.h in Sources */,
+				9670B134251492F30071C759 /* LDSRouterInfo.m in Sources */,
 				9670B11825148F9A0071C759 /* ViewController.swift in Sources */,
 				9670B11425148F9A0071C759 /* AppDelegate.swift in Sources */,
 				9670B11625148F9A0071C759 /* SceneDelegate.swift in Sources */,
