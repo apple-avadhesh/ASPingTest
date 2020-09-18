@@ -1,0 +1,11 @@
+framework module TinyConsole {
+  umbrella header "TinyConsole.h"
+
+  export *
+  module * { export * }
+}
+
+module TinyConsole.Swift {
+    header "TinyConsole-Swift.h"
+    requires objc
+}

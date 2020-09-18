@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TinyConsole
 
 class ViewController: UIViewController, SimplePingDelegate {
     
@@ -28,9 +29,10 @@ class ViewController: UIViewController, SimplePingDelegate {
             pinger = SimplePing(hostName: routerIP)
             pinger?.delegate = self
             pinger?.start()
+            
+            consolePrint(routerIP)
         }
     }
-    
     
     //MARK: SimplePing Delegates
     func simplePing(_ pinger: SimplePing, didStartWithAddress address: Data) {
@@ -38,7 +40,7 @@ class ViewController: UIViewController, SimplePingDelegate {
             return
         }
         timer = DispatchSource.makeTimerSource(queue: DispatchQueue.main)
-        timer?.schedule(deadline: .now(), repeating: .seconds(1), leeway: .seconds(1))
+        timer?.schedule(deadline: .now(), repeating: .seconds(2), leeway: .seconds(1))
         timer?.setEventHandler(handler: {
             pinger.send(with: nil)
         })
@@ -46,17 +48,25 @@ class ViewController: UIViewController, SimplePingDelegate {
     }
     
     func simplePing(_ pinger: SimplePing, didSendPacket packet: Data, sequenceNumber: UInt16) {
-        print("PING: success!!!")
+        consolePrint("PING: didSendPacket \(packet)")
     }
     
     func simplePing(_ pinger: SimplePing, didReceivePingResponsePacket packet: Data, sequenceNumber: UInt16) {
-        print("PING: received \(packet)")
+        consolePrint("PING: didReceivePingResponsePacket \(packet)")
     }
     
     func simplePing(_ pinger: SimplePing, didFailToSendPacket packet: Data, sequenceNumber: UInt16, error: Error) {
         let err = error as NSError
         if err.code == 65 {
-            print("PING: transmission failed!!!")
+            consolePrint("PING: didFailToSendPacket \(packet)")
         }
+    }
+}
+
+extension ViewController {
+    
+    func consolePrint(_ content: String) {
+        TinyConsole.print(content)
+        TinyConsole.addLine()
     }
 }

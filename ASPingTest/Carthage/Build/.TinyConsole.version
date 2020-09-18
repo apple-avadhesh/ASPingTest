@@ -1,0 +1,11 @@
+{
+  "commitish" : "2.0.1",
+  "iOS" : [
+    {
+      "hash" : "5dd40ecf7a3b4516ee14be522901e58edfef817d09b378df6fc96cb4c77b72c0",
+      "name" : "TinyConsole",
+      "linking" : "dynamic",
+      "swiftToolchainVersion" : "5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+    }
+  ]
+}
