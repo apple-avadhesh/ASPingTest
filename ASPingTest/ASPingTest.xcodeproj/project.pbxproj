@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		965933DA25761B0E00A27B7D /* TinyConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965933CD25761B0E00A27B7D /* TinyConsole.swift */; };
+		965933DB25761B0E00A27B7D /* TinyConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965933CE25761B0E00A27B7D /* TinyConsoleViewController.swift */; };
+		965933DC25761B0E00A27B7D /* UITextViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965933D025761B0E00A27B7D /* UITextViewExtensions.swift */; };
+		965933DD25761B0E00A27B7D /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965933D125761B0E00A27B7D /* UIViewControllerExtensions.swift */; };
+		965933DE25761B0E00A27B7D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965933D225761B0E00A27B7D /* UIViewExtensions.swift */; };
+		965933DF25761B0E00A27B7D /* UIAlertActionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965933D325761B0E00A27B7D /* UIAlertActionExtensions.swift */; };
+		965933E025761B0E00A27B7D /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965933D425761B0E00A27B7D /* UIButtonExtensions.swift */; };
+		965933E125761B0E00A27B7D /* NSAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965933D525761B0E00A27B7D /* NSAttributedStringExtensions.swift */; };
+		965933E325761B0E00A27B7D /* TinyConsoleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965933D925761B0E00A27B7D /* TinyConsoleController.swift */; };
 		9670B11425148F9A0071C759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9670B11325148F9A0071C759 /* AppDelegate.swift */; };
 		9670B11825148F9A0071C759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9670B11725148F9A0071C759 /* ViewController.swift */; };
 		9670B11D25148F9C0071C759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9670B11C25148F9C0071C759 /* Assets.xcassets */; };
@@ -14,25 +23,20 @@
 		9670B12E2514901D0071C759 /* SimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670B12C2514901C0071C759 /* SimplePing.m */; };
 		9670B134251492F30071C759 /* LDSRouterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9670B133251492F30071C759 /* LDSRouterInfo.m */; };
 		9670B136251493D40071C759 /* route.h in Sources */ = {isa = PBXBuildFile; fileRef = 9670B135251493D40071C759 /* route.h */; };
-		9670B1392514C9940071C759 /* TinyConsole.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9670B1382514C9940071C759 /* TinyConsole.framework */; };
-		9670B13A2514C9940071C759 /* TinyConsole.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9670B1382514C9940071C759 /* TinyConsole.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		9670B13B2514C9940071C759 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				9670B13A2514C9940071C759 /* TinyConsole.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		965933CD25761B0E00A27B7D /* TinyConsole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyConsole.swift; sourceTree = "<group>"; };
+		965933CE25761B0E00A27B7D /* TinyConsoleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyConsoleViewController.swift; sourceTree = "<group>"; };
+		965933D025761B0E00A27B7D /* UITextViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewExtensions.swift; sourceTree = "<group>"; };
+		965933D125761B0E00A27B7D /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		965933D225761B0E00A27B7D /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		965933D325761B0E00A27B7D /* UIAlertActionExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertActionExtensions.swift; sourceTree = "<group>"; };
+		965933D425761B0E00A27B7D /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		965933D525761B0E00A27B7D /* NSAttributedStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtensions.swift; sourceTree = "<group>"; };
+		965933D725761B0E00A27B7D /* TinyConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TinyConsole.h; sourceTree = "<group>"; };
+		965933D825761B0E00A27B7D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965933D925761B0E00A27B7D /* TinyConsoleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyConsoleController.swift; sourceTree = "<group>"; };
 		9670B11025148F9A0071C759 /* ASPingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASPingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9670B11325148F9A0071C759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9670B11725148F9A0071C759 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +49,6 @@
 		9670B132251492F30071C759 /* LDSRouterInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LDSRouterInfo.h; sourceTree = "<group>"; };
 		9670B133251492F30071C759 /* LDSRouterInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LDSRouterInfo.m; sourceTree = "<group>"; };
 		9670B135251493D40071C759 /* route.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = route.h; sourceTree = "<group>"; };
-		9670B1382514C9940071C759 /* TinyConsole.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TinyConsole.framework; path = Carthage/Build/iOS/TinyConsole.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,13 +56,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9670B1392514C9940071C759 /* TinyConsole.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		965933CC25761B0E00A27B7D /* TinyConsole */ = {
+			isa = PBXGroup;
+			children = (
+				965933CD25761B0E00A27B7D /* TinyConsole.swift */,
+				965933CE25761B0E00A27B7D /* TinyConsoleViewController.swift */,
+				965933CF25761B0E00A27B7D /* Extensions */,
+				965933D625761B0E00A27B7D /* Supporting Files */,
+				965933D925761B0E00A27B7D /* TinyConsoleController.swift */,
+			);
+			path = TinyConsole;
+			sourceTree = "<group>";
+		};
+		965933CF25761B0E00A27B7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				965933D025761B0E00A27B7D /* UITextViewExtensions.swift */,
+				965933D125761B0E00A27B7D /* UIViewControllerExtensions.swift */,
+				965933D225761B0E00A27B7D /* UIViewExtensions.swift */,
+				965933D325761B0E00A27B7D /* UIAlertActionExtensions.swift */,
+				965933D425761B0E00A27B7D /* UIButtonExtensions.swift */,
+				965933D525761B0E00A27B7D /* NSAttributedStringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		965933D625761B0E00A27B7D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				965933D725761B0E00A27B7D /* TinyConsole.h */,
+				965933D825761B0E00A27B7D /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9670B10725148F9A0071C759 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +116,7 @@
 		9670B11225148F9A0071C759 /* ASPingTest */ = {
 			isa = PBXGroup;
 			children = (
+				965933CC25761B0E00A27B7D /* TinyConsole */,
 				9670B131251492C50071C759 /* RouterInfo */,
 				9670B130251490330071C759 /* SimplePing */,
 				9670B11325148F9A0071C759 /* AppDelegate.swift */,
@@ -114,7 +151,6 @@
 		9670B1372514C9940071C759 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9670B1382514C9940071C759 /* TinyConsole.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,7 +165,6 @@
 				9670B10C25148F9A0071C759 /* Sources */,
 				9670B10D25148F9A0071C759 /* Frameworks */,
 				9670B10E25148F9A0071C759 /* Resources */,
-				9670B13B2514C9940071C759 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,8 +227,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9670B136251493D40071C759 /* route.h in Sources */,
+				965933E325761B0E00A27B7D /* TinyConsoleController.swift in Sources */,
+				965933DB25761B0E00A27B7D /* TinyConsoleViewController.swift in Sources */,
+				965933DA25761B0E00A27B7D /* TinyConsole.swift in Sources */,
+				965933DC25761B0E00A27B7D /* UITextViewExtensions.swift in Sources */,
+				965933DF25761B0E00A27B7D /* UIAlertActionExtensions.swift in Sources */,
+				965933DD25761B0E00A27B7D /* UIViewControllerExtensions.swift in Sources */,
 				9670B134251492F30071C759 /* LDSRouterInfo.m in Sources */,
+				965933DE25761B0E00A27B7D /* UIViewExtensions.swift in Sources */,
+				965933E125761B0E00A27B7D /* NSAttributedStringExtensions.swift in Sources */,
 				9670B11825148F9A0071C759 /* ViewController.swift in Sources */,
+				965933E025761B0E00A27B7D /* UIButtonExtensions.swift in Sources */,
 				9670B11425148F9A0071C759 /* AppDelegate.swift in Sources */,
 				9670B12E2514901D0071C759 /* SimplePing.m in Sources */,
 			);
@@ -332,20 +376,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development: Vishal Lohia (UJK3J3TLXH)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				DEVELOPMENT_TEAM = MMMJR6XCK4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ASPingTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.avadhesh.ASPingTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arris.sbc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = SURFboardCentralDevelopmentProfile;
 				SWIFT_OBJC_BRIDGING_HEADER = "ASPingTest/ASPingTest-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -358,20 +400,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development: Vishal Lohia (UJK3J3TLXH)";
 				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				DEVELOPMENT_TEAM = MMMJR6XCK4;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ASPingTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.avadhesh.ASPingTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arris.sbc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = SURFboardCentralDevelopmentProfile;
 				SWIFT_OBJC_BRIDGING_HEADER = "ASPingTest/ASPingTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

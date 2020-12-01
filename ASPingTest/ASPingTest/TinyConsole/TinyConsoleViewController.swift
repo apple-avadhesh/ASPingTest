@@ -28,23 +28,23 @@ class TinyConsoleViewController: UIViewController {
         view.addSubview(stackView)
         setupConstraints()
         
-        let customTextButton = UIButton(type: .system)
-        customTextButton.setTitle("Text", for: .normal)
-        customTextButton.addTarget(self, action: #selector(customText(sender:)), for: .touchUpInside)
-        customTextButton.applyMiniStyle()
-        stackView.addArrangedSubview(customTextButton)
-        
-        let lineButton = UIButton(type: .system)
-        lineButton.setTitle("Line", for: .normal)
-        lineButton.addTarget(self, action: #selector(addLine(sender:)), for: .touchUpInside)
-        lineButton.applyMiniStyle()
-        stackView.addArrangedSubview(lineButton)
-        
-        let clearButton = UIButton(type: .system)
-        clearButton.setTitle("More", for: .normal)
-        clearButton.addTarget(self, action: #selector(additionalActions(sender:)), for: .touchUpInside)
-        clearButton.applyMiniStyle()
-        stackView.addArrangedSubview(clearButton)
+//        let customTextButton = UIButton(type: .system)
+//        customTextButton.setTitle("Text", for: .normal)
+//        customTextButton.addTarget(self, action: #selector(customText(sender:)), for: .touchUpInside)
+//        customTextButton.applyMiniStyle()
+//        stackView.addArrangedSubview(customTextButton)
+//
+//        let lineButton = UIButton(type: .system)
+//        lineButton.setTitle("Line", for: .normal)
+//        lineButton.addTarget(self, action: #selector(addLine(sender:)), for: .touchUpInside)
+//        lineButton.applyMiniStyle()
+//        stackView.addArrangedSubview(lineButton)
+//
+//        let clearButton = UIButton(type: .system)
+//        clearButton.setTitle("More", for: .normal)
+//        clearButton.addTarget(self, action: #selector(additionalActions(sender:)), for: .touchUpInside)
+//        clearButton.applyMiniStyle()
+//        stackView.addArrangedSubview(clearButton)
     }
 
     private func setupConstraints() {

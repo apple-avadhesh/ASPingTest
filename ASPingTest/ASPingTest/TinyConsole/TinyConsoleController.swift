@@ -47,7 +47,7 @@ open class TinyConsoleController: UIViewController {
     
     // MARK: - Public Properties
     
-    public var consoleHeight: CGFloat = 200 {
+    public var consoleHeight: CGFloat = UIScreen.main.bounds.height {
         didSet {
             UIView.animate(withDuration: animationDuration) {
                 self.updateHeightConstraint()

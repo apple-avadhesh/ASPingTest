@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import TinyConsole
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import TinyConsole
 
 class ViewController: UIViewController, SimplePingDelegate {
     
